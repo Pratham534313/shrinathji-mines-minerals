@@ -158,7 +158,9 @@ footer h4{font:600 12px Manrope;letter-spacing:.14em;text-transform:uppercase;co
 }
 @media(max-width:760px){
 section{padding:76px 0}.wrap{padding:0 20px}
-.burger{display:block}
+.burger{display:block;margin-left:auto;margin-right:-10px}
+.hero h1{font-size:clamp(40px,12vw,56px)}.hero p{font-size:16px}
+.hero .cta{flex-direction:column}.hero .btn{flex:none;width:100%;padding:17px 20px;white-space:nowrap}
 nav ul{position:fixed;top:0;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);color:var(--ink);padding:92px 20px 24px;transform:translateY(-110%);transition:transform .35s ease;z-index:-1;border-bottom:1px solid var(--line)}
 nav ul.open{transform:none}nav li{border-bottom:1px solid var(--line)}nav li a{display:block;padding:15px 0}
 nav li:last-child{border:0;margin-top:14px}nav li:last-child a{text-align:center;background:var(--bronze);color:#fff;border-color:var(--bronze)}
@@ -166,7 +168,7 @@ header.menu{background:var(--bg);color:var(--ink)}
 .grid4,.pts,.apps,.fg,footer .wrap{grid-template-columns:1fr}
 .snap div{padding:26px 18px}form{padding:28px 20px}
 .loc{position:static;margin-top:42px}.hero{padding-bottom:40px}
-.hero .btn{flex:1;text-align:center;min-width:150px}
+.hero .btn{text-align:center}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
