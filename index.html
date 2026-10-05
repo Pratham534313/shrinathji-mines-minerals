@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shreenathji Mines & Minerals | Bhuj, Gujarat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f0e8;--bg2:#ebe4d6;--ink:#26231f;--mute:#6b645a;--line:#d6cdbb;--sand:#cdbf9f;--bronze:#9a6b3a;--dark:#1f1d1a;--on:#f4f0e8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#f4f0e8;--bg2:#ebe4d6;--ink:#26231f}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.logo{font-family:Manrope,system-ui,sans-serif;margin:0;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--bronze);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:110px 0}
+.lbl{font:600 12px/1 Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);margin-bottom:18px;display:block}
+h2{font-size:clamp(30px,4vw,46px);font-weight:700;line-height:1.1;max-width:18ch}
+.lead{color:var(--mute);max-width:56ch}
+.btn{display:inline-block;padding:15px 26px;font:600 14px/1 Manrope,sans-serif;border:1px solid var(--ink);cursor:pointer;transition:background .25s,color .25s,border-color .25s;background:none;color:var(--ink)}
+.btn.fill{background:var(--bronze);border-color:var(--bronze);color:#fff}
+.btn.fill:hover{background:#7e5529;border-color:#7e5529}
+.btn:hover{background:var(--ink);color:var(--bg)}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:background .3s,border-color .3s;border-bottom:1px solid transparent;color:var(--on)}
+header.solid{background:rgba(244,240,232,.97);color:var(--ink);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{font-weight:800;font-size:17px;line-height:1.05;letter-spacing:.06em}
+.logo small{display:block;font-weight:500;font-size:11px;letter-spacing:.2em;opacity:.8;margin-top:3px}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0;font:500 14px Manrope,sans-serif;align-items:center}
+nav a:not(.btn):hover{color:var(--bronze)}
+header .btn{padding:11px 18px;border-color:currentColor;color:inherit}
+header .btn:hover{background:var(--bronze);border-color:var(--bronze);color:#fff}
+.burger{display:none;background:none;border:0;color:inherit;width:44px;height:44px;cursor:pointer;padding:0}
+.burger span{display:block;width:24px;height:2px;background:currentColor;margin:5px auto;transition:transform .25s,opacity .25s}
+/* hero */
+.hero{min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;position:relative;color:var(--on);padding:140px 0 70px;overflow:hidden;background:#2a2622}
+.hero .bg{position:absolute;inset:-8% 0;background:
+linear-gradient(180deg,rgba(20,18,16,.55),rgba(20,18,16,.25) 40%,rgba(20,18,16,.85)),
+linear-gradient(115deg,transparent 0 55%,rgba(154,107,58,.28) 55% 56%,transparent 56%),
+linear-gradient(160deg,#4a4239 0%,#2c2722 45%,#3b332a 70%,#1f1c18 100%);will-change:transform}
+.hero .bg::after{content:"";position:absolute;inset:0;opacity:.35;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero .wrap{position:relative}
+.hero h1{font-size:clamp(42px,7.4vw,92px);font-weight:800;line-height:1;max-width:11ch;animation:rise .9s ease both}
+.hero p{max-width:54ch;color:#ddd4c3;margin:28px 0 36px;font-size:18px;animation:rise .9s .15s ease both}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;animation:rise .9s .3s ease both}
+.hero .btn{border-color:#d9cfbb;color:var(--on)}.hero .btn.fill{border-color:var(--bronze)}
+.hero .btn:not(.fill):hover{background:var(--on);color:var(--dark)}
+.loc{position:absolute;right:28px;bottom:0;font:500 13px Manrope;letter-spacing:.08em;color:#cfc4ae;display:flex;align-items:center;gap:8px}
+.loc::before{content:"";width:7px;height:7px;background:var(--bronze);border-radius:50%}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+/* snapshot */
+.snap{padding:0;background:var(--bg2);border-bottom:1px solid var(--line)}
+.snap .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.snap div{padding:38px 28px;border-left:1px solid var(--line)}
+.snap div:first-child{border-left:0;padding-left:0}
+.snap b{display:block;font:700 19px Manrope;margin-bottom:4px}
+.snap span{color:var(--mute);font-size:14px}
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.ph{position:relative;overflow:hidden;background:#8d8473;min-height:100%}
+.ph i{position:absolute;inset:0;transition:transform .8s ease}
+.ph:hover i{transform:scale(1.05)}
+.ph em{position:absolute;left:14px;bottom:12px;font:500 11px Manrope;letter-spacing:.12em;text-transform:uppercase;color:#f4f0e8;background:rgba(31,29,26,.55);padding:5px 9px;font-style:normal}
+.ph.a{aspect-ratio:4/5}
+.ph.a i{background:linear-gradient(140deg,#b3a68c,#6f6554 55%,#3e372e);}
+.ph i::after{content:"";position:absolute;inset:0;opacity:.3;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+.about p{color:var(--mute)}.about h2{margin-bottom:26px}
+/* minerals */
+.minerals{background:var(--bg2)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.card{background:var(--bg);display:flex;flex-direction:column}
+.card .ph{aspect-ratio:1/1;min-height:0}
+.card:nth-child(1) i{background:linear-gradient(135deg,#d8cdb4,#a39677)}
+.card:nth-child(2) i{background:linear-gradient(135deg,#a89a85,#625847)}
+.card:nth-child(3) i{background:linear-gradient(135deg,#c2b08c,#8a6f46)}
+.card:nth-child(4) i{background:linear-gradient(135deg,#7d7468,#3b352d)}
+.card div.t{padding:24px 22px 26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:18px;font-weight:700}
+.card p{margin:0;font-size:14px;color:var(--mute)}
+.card dl{margin:4px 0 0;font-size:13px;border-top:1px solid var(--line);padding-top:12px}
+.card dt{font:600 11px Manrope;letter-spacing:.1em;text-transform:uppercase;color:var(--bronze)}
+.card dd{margin:2px 0 0;color:var(--mute)}
+.card a{margin-top:auto;font:600 13px Manrope;border-bottom:1px solid var(--bronze);align-self:flex-start;padding-bottom:2px}
+.card a:hover{color:var(--bronze)}
+.note{margin-top:22px;font-size:13px;color:var(--mute)}
+/* applications */
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
+.app{position:relative;aspect-ratio:3/2;overflow:hidden;color:var(--on);display:flex;align-items:flex-end;padding:22px;background:#4b443a}
+.app::before{content:"";position:absolute;inset:0;transition:transform .8s ease;background:linear-gradient(0deg,rgba(25,22,19,.8),rgba(25,22,19,.05) 65%),var(--g)}
+.app:hover::before{transform:scale(1.06)}
+.app span{position:relative;font:600 18px Manrope}
+.app:nth-child(1){--g:linear-gradient(120deg,#8c8372,#4f483e)}.app:nth-child(2){--g:linear-gradient(120deg,#c7b998,#7a6c52)}
+.app:nth-child(3){--g:linear-gradient(120deg,#9aa09b,#4d524e)}.app:nth-child(4){--g:linear-gradient(120deg,#b08a5c,#5a4326)}
+.app:nth-child(5){--g:linear-gradient(120deg,#6e675c,#2f2b26)}.app:nth-child(6){--g:linear-gradient(120deg,#a8a190,#5f5849)}
+/* quality */
+.quality{background:var(--dark);color:var(--on)}
+.quality .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:start}
+.quality h2{font-size:clamp(40px,6vw,76px);max-width:none}
+.quality .lead{color:#b9b0a0;margin-top:26px}
+.quality ul{list-style:none;margin:0;padding:0}
+.quality li{padding:22px 0;border-top:1px solid #3d3830;display:grid;grid-template-columns:34px 1fr;gap:6px}
+.quality li:last-child{border-bottom:1px solid #3d3830}
+.quality li::before{content:"";width:9px;height:9px;background:var(--bronze);margin-top:9px}
+.quality b{font:600 17px Manrope}.quality li span{grid-column:2;color:#a79e8e;font-size:14px}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);margin-top:64px;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:22px;height:1px;background:var(--line)}
+.step{position:relative;padding-right:18px}
+.step .n{width:45px;height:45px;background:var(--bg);border:1px solid var(--bronze);display:grid;place-items:center;font:700 14px Manrope;color:var(--bronze);margin-bottom:20px;position:relative}
+.step h3{font-size:18px;margin-bottom:6px}.step p{margin:0;font-size:14px;color:var(--mute)}
+/* why */
+.why{background:var(--bg2)}
+.pts{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:56px}
+.pts div{border-top:2px solid var(--bronze);padding-top:22px}
+.pts h3{font-size:19px;margin-bottom:8px}.pts p{margin:0;color:var(--mute);font-size:15px}
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:70px}
+address{font-style:normal;margin:28px 0;font-size:17px;line-height:1.7}
+address strong{font:700 15px Manrope;letter-spacing:.06em;display:block;margin-bottom:6px}
+.map{margin-top:30px;aspect-ratio:16/10;border:1px solid var(--line);background:
+linear-gradient(var(--line) 1px,transparent 1px) 0 0/40px 40px,linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/40px 40px,var(--bg2);display:grid;place-items:center;color:var(--mute);font-size:13px;text-align:center}
+.map b{display:block;color:var(--ink);font:600 14px Manrope}
+.small{color:var(--mute);font-size:14px}
+/* form */
+form{background:var(--bg2);padding:44px;border:1px solid var(--line)}
+form h2{font-size:32px;margin-bottom:26px;max-width:none}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.f{display:flex;flex-direction:column;gap:6px}.f.full{grid-column:1/-1}
+label{font:600 13px Manrope}
+input,textarea,select{font:400 15px Inter,sans-serif;padding:13px 14px;border:1px solid #bfb49d;background:var(--bg);color:var(--ink);border-radius:0;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--bronze);outline-offset:0;border-color:var(--bronze)}
+textarea{min-height:110px;resize:vertical}
+form .btn{margin-top:24px}
+.ok{display:none;padding:30px 0}
+.ok h3{font-size:24px;margin-bottom:10px}
+form.sent .fg,form.sent>.btn,form.sent>h2{display:none}form.sent .ok{display:block}
+/* footer */
+footer{background:var(--dark);color:#b9b0a0;padding:70px 0 34px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px}
+footer .logo{color:var(--on)}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+footer a:hover{color:var(--sand)}
+footer h4{font:600 12px Manrope;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);margin:0 0 14px}
+.copy{border-top:1px solid #3d3830;margin-top:50px;padding-top:24px}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media(max-width:980px){
+.grid4{grid-template-columns:repeat(2,1fr)}.snap .wrap{grid-template-columns:repeat(2,1fr)}.snap div:nth-child(3){border-left:0;padding-left:0}
+.about .wrap,.quality .wrap,.contact .wrap{grid-template-columns:1fr;gap:44px}
+.steps{grid-template-columns:1fr;gap:30px}.steps::before{left:22px;right:auto;top:0;bottom:0;width:1px;height:auto}
+.step{display:grid;grid-template-columns:45px 1fr;gap:0 20px;padding:0}.step .n{grid-row:1/3;margin:0}
+.pts,.apps{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+section{padding:76px 0}.wrap{padding:0 20px}
+.burger{display:block}
+nav ul{position:fixed;top:0;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);color:var(--ink);padding:92px 20px 24px;transform:translateY(-110%);transition:transform .35s ease;z-index:-1;border-bottom:1px solid var(--line)}
+nav ul.open{transform:none}nav li{border-bottom:1px solid var(--line)}nav li a{display:block;padding:15px 0}
+nav li:last-child{border:0;margin-top:14px}nav li:last-child a{text-align:center;background:var(--bronze);color:#fff;border-color:var(--bronze)}
+header.menu{background:var(--bg);color:var(--ink)}
+.grid4,.pts,.apps,.fg,footer .wrap{grid-template-columns:1fr}
+.snap div{padding:26px 18px}form{padding:28px 20px}
+.loc{position:static;margin-top:42px}.hero{padding-bottom:40px}
+.hero .btn{flex:1;text-align:center;min-width:150px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a href="#home" class="logo" aria-label="Shreenathji Mines and Minerals">SHREENATHJI<small>MINES &amp; MINERALS</small></a>
+<button class="burger" id="bg" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav><ul id="mn"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#minerals">Minerals</a></li><li><a href="#quality">Quality</a></li><li><a href="#applications">Applications</a></li><li><a href="#infrastructure">Infrastructure</a></li><li><a href="#contact">Contact</a></li><li><a class="btn" href="#enquiry">Enquire Now</a></li></ul></nav>
+</div></header>
+
+<main>
+<section class="hero" id="home"><div class="bg" id="hb"></div><div class="wrap">
+<h1>Mineral Resources. Built for Industry.</h1>
+<p>Reliable mineral solutions for industrial applications, backed by consistent quality, dependable supply and a commitment to long-term B2B partnerships.</p>
+<div class="cta"><a class="btn fill" href="#minerals">Explore Minerals</a><a class="btn" href="#enquiry">Send an Enquiry</a></div>
+<div class="loc">Bhuj, Gujarat, India</div>
+</div></section>
+
+<section class="snap" aria-label="Company snapshot"><div class="wrap">
+<div><b>Bhuj, Gujarat</b><span>Registered location</span></div>
+<div><b>Mineral Supply</b><span>Industrial materials</span></div>
+<div><b>B2B Solutions</b><span>Built for procurement teams</span></div>
+<div><b>Quality Focused</b><span>Specification-led approach</span></div>
+</div></section>
+
+<section class="about" id="about"><div class="wrap">
+<div class="ph a rv"><i></i><em>Image: quarry / site photograph</em></div>
+<div class="rv"><span class="lbl">About Shreenathji Mines &amp; Minerals</span>
+<h2>Built Around Reliability</h2>
+<p style="margin-top:26px">Shreenathji Mines and Minerals is a mineral supply business based in Bhuj, Gujarat. We work with industrial buyers who need materials that meet their specification, batch after batch.</p>
+<p>Our approach rests on careful sourcing, attention to material quality and clear communication on requirements, quantities and schedules. We aim for dependable supply that industrial users can plan around, and we build our relationships with customers for the long term.</p></div>
+</div></section>
+
+<section class="minerals" id="minerals"><div class="wrap">
+<div class="head"><div><span class="lbl">Products</span><h2>Mineral Portfolio</h2></div><p class="lead" style="margin:0">Catalogue entries below are placeholders, to be replaced with verified product details and photography.</p></div>
+<div class="grid4">
+<article class="card"><div class="ph"><i></i><em>Photo 01</em></div><div class="t"><h3>[Mineral / Product 01]</h3><p>[Short verified description]</p><dl><dt>Applications</dt><dd>[Verified applications]</dd></dl><a href="#enquiry">View Details</a></div></article>
+<article class="card"><div class="ph"><i></i><em>Photo 02</em></div><div class="t"><h3>[Mineral / Product 02]</h3><p>[Short verified description]</p><dl><dt>Applications</dt><dd>[Verified applications]</dd></dl><a href="#enquiry">View Details</a></div></article>
+<article class="card"><div class="ph"><i></i><em>Photo 03</em></div><div class="t"><h3>[Mineral / Product 03]</h3><p>[Short verified description]</p><dl><dt>Applications</dt><dd>[Verified applications]</dd></dl><a href="#enquiry">View Details</a></div></article>
+<article class="card"><div class="ph"><i></i><em>Photo 04</em></div><div class="t"><h3>[Mineral / Product 04]</h3><p>[Short verified description]</p><dl><dt>Applications</dt><dd>[Verified applications]</dd></dl><a href="#enquiry">View Details</a></div></article>
+</div></div></section>
+
+<section id="applications"><div class="wrap">
+<span class="lbl">Applications</span><h2>Where Industrial Minerals Are Used</h2>
+<p class="lead" style="margin-top:22px">Industries where minerals of this kind are commonly applied. Specific supply relationships will be listed here once product data is verified.</p>
+<div class="apps">
+<div class="app rv"><span>Construction</span></div><div class="app rv"><span>Ceramics</span></div><div class="app rv"><span>Glass</span></div>
+<div class="app rv"><span>Paints &amp; Coatings</span></div><div class="app rv"><span>Industrial Manufacturing</span></div><div class="app rv"><span>Other Industrial Applications</span></div>
+</div></div></section>
+
+<section class="quality" id="quality"><div class="wrap">
+<div class="rv"><h2>Consistency Matters.</h2><p class="lead">For an industrial buyer, a mineral is only as useful as it is repeatable. Process settings, formulations and finished-product quality all depend on material that arrives the same way each time.</p></div>
+<ul class="rv">
+<li><b>Consistent material quality</b><span>Material supplied to an agreed specification, shipment after shipment.</span></li>
+<li><b>Proper sourcing</b><span>Knowing where material comes from and how it is handled.</span></li>
+<li><b>Clear specifications</b><span>Requirements defined and confirmed before supply begins.</span></li>
+<li><b>Reliable supply</b><span>Quantities and schedules that buyers can plan around.</span></li>
+<li><b>Professional communication</b><span>Prompt, precise responses to technical and commercial queries.</span></li>
+</ul>
+</div></section>
+
+<section id="infrastructure"><div class="wrap">
+<span class="lbl">Supply process</span><h2>From Source to Supply</h2>
+<div class="steps">
+<div class="step"><div class="n">01</div><h3>Source</h3><p>Identify and secure suitable material.</p></div>
+<div class="step"><div class="n">02</div><h3>Inspect</h3><p>Check material against requirements.</p></div>
+<div class="step"><div class="n">03</div><h3>Process / Prepare</h3><p>Prepare to the agreed specification.</p></div>
+<div class="step"><div class="n">04</div><h3>Supply</h3><p>Dispatch to schedule and quantity.</p></div>
+<div class="step"><div class="n">05</div><h3>Support</h3><p>Stay available after delivery.</p></div>
+</div></div></section>
+
+<section class="why"><div class="wrap">
+<span class="lbl">Why partner with us</span><h2>Built for Long-Term Business</h2>
+<div class="pts">
+<div><h3>Reliable Communication</h3><p>Clear, timely answers on availability, specifications and delivery.</p></div>
+<div><h3>Consistent Supply</h3><p>Planning around your production schedule, not just a single order.</p></div>
+<div><h3>Quality-Focused Approach</h3><p>Material matched to the requirement you define.</p></div>
+<div><h3>Long-Term B2B Relationships</h3><p>We measure success by repeat business and trust.</p></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+<div><span class="lbl">Corporate office</span><h2>Visit or Write to Us</h2>
+<address><strong>SHREENATHJI MINES AND MINERALS</strong>6MQV+F7H,<br>Shreeji Nagar,<br>Bhuj, Gujarat 370020,<br>India</address>
+<a class="btn" href="https://www.google.com/maps/search/?api=1&query=6MQV%2BF7H%20Bhuj%20Gujarat" target="_blank" rel="noopener">Get Directions</a>
+<p class="small" style="margin-top:22px">Contact details available on request.</p>
+<div class="map"><div><b>Map placeholder</b>Embed location map here</div></div></div>
+
+<form id="fm" novalidate aria-labelledby="enquiry"><span id="enquiry" style="position:relative;top:-100px"></span>
+<h2>Discuss Your Requirement</h2>
+<div class="fg">
+<div class="f"><label for="n">Full Name *</label><input id="n" required autocomplete="name"></div>
+<div class="f"><label for="c">Company Name *</label><input id="c" required autocomplete="organization"></div>
+<div class="f"><label for="e">Business Email</label><input id="e" type="email" autocomplete="email"></div>
+<div class="f"><label for="p">Phone Number *</label><input id="p" type="tel" required autocomplete="tel"></div>
+<div class="f"><label for="m">Product / Mineral Required</label><input id="m"></div>
+<div class="f"><label for="q">Quantity Required</label><input id="q" placeholder="e.g. tonnes per month"></div>
+<div class="f full"><label for="a">Application / Industry</label><input id="a"></div>
+<div class="f full"><label for="g">Message</label><textarea id="g" placeholder="Specifications, grade, packaging, delivery location"></textarea></div>
+</div>
+<button class="btn fill" type="submit">Submit Enquiry</button>
+<div class="ok" role="status"><h3>Enquiry received</h3><p class="lead">Thank you. Our team will review your requirement and respond using the details you provided.</p></div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<div><div class="logo">SHREENATHJI<small>MINES &amp; MINERALS</small></div><p style="margin-top:18px;max-width:34ch">Mineral resources and B2B supply solutions from Bhuj, Gujarat.</p></div>
+<div><h4>Links</h4><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#minerals">Minerals</a></li><li><a href="#quality">Quality</a></li><li><a href="#applications">Applications</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>Location</h4><p style="margin:0">Bhuj, Gujarat, India</p></div>
+<div class="copy" style="grid-column:1/-1">© 2026 Shreenathji Mines &amp; Minerals. All rights reserved.</div>
+</div></footer>
+
+<script>
+const hd=document.getElementById('hd'),mn=document.getElementById('mn'),bg=document.getElementById('bg'),hb=document.getElementById('hb');
+function sc(){hd.classList.toggle('solid',scrollY>30);if(scrollY<innerHeight)hb.style.transform='translateY('+scrollY*.15+'px)'}
+addEventListener('scroll',sc,{passive:true});sc();
+function tg(o){mn.classList.toggle('open',o);hd.classList.toggle('menu',o);bg.setAttribute('aria-expanded',o)}
+bg.onclick=()=>tg(!mn.classList.contains('open'));
+mn.querySelectorAll('a').forEach(a=>a.onclick=()=>tg(false));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const fm=document.getElementById('fm');
+fm.onsubmit=ev=>{ev.preventDefault();let ok=true;
+fm.querySelectorAll('[required]').forEach(i=>{const bad=!i.value.trim();i.style.borderColor=bad?'#a33':'';if(bad)ok=false});
+const em=document.getElementById('e');if(em.value&&!em.checkValidity()){em.style.borderColor='#a33';ok=false}
+if(ok){fm.classList.add('sent');fm.scrollIntoView({block:'center'})}else fm.querySelector('[required]:invalid,[style*="a33"]')?.focus()};
+</script>
+</body>
+</html>
