@@ -1,0 +1,1 @@
+# shrinathji-mines-minerals
